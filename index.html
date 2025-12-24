@@ -1,215 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>InstinctRise | Exclusive D2D Territory Control</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InstinctRise | Territory IQ for Roofing Teams</title>
+  <meta name="description" content="Exclusive roofing territories powered by street-level scoring. Put reps on the right doors, cut burnout, and increase inspections—without new software." />
 
-<meta name="description" content="Exclusive D2D territories powered by proprietary scoring. Put reps on the right streets at the right time — without burnout." />
+  <!-- Stripe Buy Button -->
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
-<!-- Stripe Buy Button -->
-<script async src="https://js.stripe.com/v3/buy-button.js"></script>
-
-<!-- Favicon -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-
-<!-- Social Preview -->
-<meta property="og:title" content="InstinctRise | Exclusive D2D Territory Control">
-<meta property="og:description" content="Exclusive D2D territories powered by proprietary scoring. Put reps on the right streets at the right time — without burnout.">
-<meta property="og:type" content="website">
-
-<style>
-:root{
---bg:#0b0f1a;
---card:#11182a;
---text:#eaf0ff;
---muted:#b9c6ea;
---line:rgba(255,255,255,.10);
---accent:#7c5cff;
---accent2:#3fe0c5;
---shadow: 0 18px 60px rgba(0,0,0,.45);
---radius:18px;
-}
-
-*{box-sizing:border-box}
-
-body{
-margin:0;
-font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-background: radial-gradient(1200px 600px at 20% 10%, rgba(124,92,255,.22), transparent 60%),
-radial-gradient(900px 500px at 80% 20%, rgba(63,224,197,.16), transparent 55%),
-var(--bg);
-color:var(--text);
-line-height:1.55;
-}
-
-.wrap{max-width:1100px;margin:0 auto;padding:28px 18px 64px}
-
-.nav{
-display:flex;align-items:center;justify-content:space-between;
-padding:14px 16px;border:1px solid var(--line);border-radius:16px;
-background:rgba(17,24,42,.55);backdrop-filter: blur(10px);
-}
-
-.brand{display:flex;gap:10px;align-items:center;font-weight:800}
-.dot{width:10px;height:10px;border-radius:50%;
-background:linear-gradient(135deg,var(--accent),var(--accent2))}
-
-h1{font-size:42px;line-height:1.1;margin:0 0 12px}
-.sub{color:var(--muted);font-size:16px;margin-bottom:18px}
-
-.card{
-border:1px solid var(--line);
-background:rgba(17,24,42,.62);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-padding:24px;
-backdrop-filter: blur(10px);
-}
-
-.hero{
-margin-top:22px;
-display:grid;
-grid-template-columns:1.3fr .7fr;
-gap:18px;
-}
-
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
-.badge{
-border:1px solid var(--line);
-border-radius:999px;
-padding:8px 12px;
-color:var(--muted);
-font-size:13px;
-background:rgba(0,0,0,.10);
-}
-
-.divider{height:1px;background:var(--line);margin:18px 0}
-
-.kpis{
-display:grid;grid-template-columns:1fr 1fr;
-gap:12px;margin-top:12px;
-}
-
-.kpi{
-border:1px solid var(--line);
-border-radius:14px;
-padding:12px;background:rgba(0,0,0,.12);
-}
-
-.kpi b{display:block;font-size:18px}
-.kpi span{font-size:12px;color:var(--muted)}
-
-.section{
-margin-top:22px;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:14px;
-}
-
-.section h3{margin:0 0 8px;font-size:16px}
-.section p{margin:0;color:var(--muted);font-size:14px}
-
-.cta{
-margin-top:18px;
-text-align:center;
-}
-
-footer{
-margin-top:28px;
-text-align:center;
-color:var(--muted);
-font-size:13px;
-}
-
-@media(max-width:900px){
-.hero{grid-template-columns:1fr}
-.section{grid-template-columns:1fr}
-h1{font-size:36px}
-}
-</style>
+  <style>
+    :root{
+      --bg:#0b0f1a;
+      --card:#11182a;
+      --text:#eaf0ff;
+      --muted:#b9c6ea;
+      --line:rgba(255,255,255,.10);
+      --accent:#f97316;    /* orange */
+      --accent2:#06b6d4;   /* cyan */
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(6,182,212,.18), transparent 60%),
+        radial-gradient(900px 500px at 80% 20%, rgba(249,115,22,.16), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 72px}
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(17,24,42,.55);
+      backdrop-filter: blur(10px);
+    }
+    .brand{display:flex;gap:10px;align-items:center;font-weight:900;letter-spacing:.2px}
+    .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+    .nav small{color:var(--muted)}
+    .hero{
+      margin-top:22px;
+      display:grid;grid-template-columns: 1.25fr .75fr;gap:18px;
+      align-items:stretch;
+    }
+    .card{
+      border:1px solid var(--line);
+      background:rgba(17,24,42,.62);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      backdrop-filter: blur(10px);
+    }
+    h1{font-size:44px;line-height:1.08;margin:0 0 12px}
+    .sub{color:var(--muted);font-size:16px;margin:0 0 18px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 10px}
+    .badge{
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:8px 12px;
+      color:var(--muted);
+      font-size:13px;
+      background:rgba(0,0,0,.10);
+    }
+    .section{margin-top:18px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+    .section h3{margin:0 0 8px;font-size:16px}
+    .section p{margin:0;color:var(--muted);font-size:14px}
+    .list{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+    .list li{margin:6px 0}
+    .divider{height:1px;background:var(--line);margin:18px 0}
+    .side h3{margin:0 0 10px;font-size:16px}
+    .kpiGrid{display:grid;grid-template-columns: 1fr 1fr;gap:10px;margin-top:10px}
+    .kpi{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px;
+      background:rgba(0,0,0,.10);
+    }
+    .kpi b{display:block;font-size:18px}
+    .kpi span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+    .proof{
+      margin-top:16px;
+      display:grid;grid-template-columns: 1fr 1fr;gap:14px;
+    }
+    .pill{
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:8px 12px;
+      background:rgba(0,0,0,.10);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .footer{
+      margin-top:18px;
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+      color:var(--muted);font-size:13px;
+    }
+    .headlineAccent{color:#fff}
+    .em{color:#fff;font-weight:800}
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      h1{font-size:36px}
+      .section{grid-template-columns:1fr}
+      .proof{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 
 <body>
-<div class="wrap">
-<div class="nav">
-<div class="brand"><span class="dot"></span> InstinctRise</div>
-<small>Exclusive D2D Territory Intelligence</small>
-</div>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand"><span class="dot"></span> InstinctRise</div>
+      <small>Roofing Territory IQ • Exclusive pockets • Built for outbound teams</small>
+    </div>
 
-<div class="hero">
-<div class="card">
-<h1>Own the right streets.<br>Protect your reps.</h1>
-<p class="sub">
-Most D2D teams don’t fail because of effort — they fail because they’re
-sent into dead zones. InstinctRise ranks neighborhoods using proprietary
-scoring so your reps hit high-probability pockets only.
-</p>
+    <div class="hero">
+      <div class="card">
+        <h1><span class="headlineAccent">Stop burning reps.</span> Start owning pockets.</h1>
+        <p class="sub">
+          Territory IQ ranks Florida streets so your team stops knocking “dead doors” and starts hitting
+          <span class="em">high-probability roof replacement pockets</span>.
+          This is <b>not</b> a CRM. It’s the map your CRM never had.
+        </p>
 
-<div class="badges">
-<div class="badge">Exclusive by industry</div>
-<div class="badge">Rep burnout prevention</div>
-<div class="badge">Territory scoring (0–100)</div>
-<div class="badge">14-day pilot</div>
-</div>
+        <div class="badges">
+          <div class="badge">Roofing only</div>
+          <div class="badge">Street-level scoring</div>
+          <div class="badge">Rep burnout protection</div>
+          <div class="badge">Exclusive territory lock</div>
+          <div class="badge">14-day pilot</div>
+        </div>
 
-<div class="divider"></div>
+        <div class="divider"></div>
 
-<p class="sub" style="margin:0">
-You don’t need more leads.<br>
-You need <b>control over where effort is applied</b>.
-</p>
-</div>
+        <p class="sub" style="margin:0">
+          <b>Simple math:</b> one extra roof closes pays for this many times over.
+          The goal is not “more leads.” It’s <span class="em">more inspections per hour</span>.
+        </p>
+      </div>
 
-<div class="card">
-<h3>What you get</h3>
-<div class="kpis">
-<div class="kpi"><b>Exclusive Pocket</b><span>Locked territory per industry</span></div>
-<div class="kpi"><b>Street Ranking</b><span>Where reps should go first</span></div>
-<div class="kpi"><b>Route Logic</b><span>Efficient daily deployment</span></div>
-<div class="kpi"><b>KPI Guardrails</b><span>Prevent burnout & waste</span></div>
-</div>
+      <div class="card side">
+        <h3>14-Day Pilot Deliverables</h3>
+        <div class="kpiGrid">
+          <div class="kpi"><b>1 Territory Pocket</b><span>ZIP / cluster scoring + priorities</span></div>
+          <div class="kpi"><b>Strike Map</b><span>Top streets first, no-go streets cut</span></div>
+          <div class="kpi"><b>Rep Routes</b><span>Plan for 1–10 reps (you choose)</span></div>
+          <div class="kpi"><b>KPI Board</b><span>Doors/hr • convos/hr • inspections/day</span></div>
+        </div>
 
-<div class="divider"></div>
+        <div class="divider"></div>
 
-<p class="sub" style="font-size:14px">
-Best fit: Roofing, HVAC, Solar, Pest, Windows, Security, Landscaping.
-</p>
-</div>
-</div>
+        <!-- Stripe Buy Button Embed -->
+        <stripe-buy-button
+          buy-button-id="buy_btn_1ShjLvPeC3A4I6DVCLr76IhO"
+          publishable-key="pk_live_51Shfb3PeC3A4I6DVOSShdrP6fmUVNoBTUuaNRcV8AZYXzgXWaymtJleY44RGcjECwgw6Jf2LXBdScjK04pc8yyyJ00UfCdRWw0">
+        </stripe-buy-button>
 
-<div class="section">
-<div class="card">
-<h3>1) Score the territory</h3>
-<p>We rank neighborhoods using real-world signals — not guesswork.</p>
-</div>
-<div class="card">
-<h3>2) Deploy smarter</h3>
-<p>Reps work tighter pockets with higher conversation quality.</p>
-</div>
-<div class="card">
-<h3>3) Lock & expand</h3>
-<p>Win the pocket. Then scale to adjacent zones.</p>
-</div>
-</div>
+        <p class="sub" style="margin:12px 0 0;font-size:13px">
+          Questions? Email: <b>skaplan@instinctrise.com</b>
+        </p>
+      </div>
+    </div>
 
-<div class="cta card">
-<h2 style="margin-top:0">14-Day Exclusive Pilot</h2>
-<p class="sub">
-One industry. One territory. Zero competition inside your pocket.
-</p>
+    <div class="section" id="how">
+      <div class="card">
+        <h3>1) Score the territory</h3>
+        <p>We rank streets using practical signals: neighborhood age windows, stability, turnover indicators, and “likely-to-buy” patterns.</p>
+        <ul class="list">
+          <li>High-intent pockets bubble up</li>
+          <li>Low ROI grind zones get cut</li>
+          <li>Reps stop wasting days</li>
+        </ul>
+      </div>
 
-<!-- STRIPE BUY BUTTON -->
-<stripe-buy-button
-buy-button-id="buy_btn_1ShjLvPeC3A4I6DVCLr76IhO"
-publishable-key="pk_live_51Shfb3PeC3A4I6DVOSShdrP6fmUVNoBTUuaNRcV8AZYXzgXWaymtJleY44RGcjECwgw6Jf2LXBdScjK04pc8yyyJ00UfCdRWw0">
-</stripe-buy-button>
-</div>
+      <div class="card">
+        <h3>2) Deploy reps smarter</h3>
+        <p>Instead of “go canvass that area,” your reps get a clear order of operations: what to hit first, and what to ignore.</p>
+        <ul class="list">
+          <li>Less driving</li>
+          <li>More conversations</li>
+          <li>More inspections</li>
+        </ul>
+      </div>
 
-<footer>
-InstinctRise • Territory Intelligence<br>
-Sean Kaplan — skaplan@instinctrise.com
-</footer>
-</div>
+      <div class="card">
+        <h3>3) Lock exclusivity</h3>
+        <p>One partner per territory pocket. If you’re in, we don’t sell your pocket to competitors.</p>
+        <ul class="list">
+          <li>Exclusive by vertical</li>
+          <li>Clear go / no-go rules</li>
+          <li>Expansion plan available</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="proof">
+      <div class="card">
+        <h3>KPIs we push up</h3>
+        <ul class="list">
+          <li><b>Doors per hour</b> (efficiency)</li>
+          <li><b>Conversations per hour</b> (quality)</li>
+          <li><b>Inspections per day</b> (output)</li>
+          <li><b>Close rate by pocket</b> (truth)</li>
+          <li><b>Rep fatigue index</b> (burnout control)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>What happens after purchase</h3>
+        <ul class="list">
+          <li><b>48 hours:</b> pocket selection + scoring run</li>
+          <li><b>Delivery:</b> strike map + ranked streets + rep routes</li>
+          <li><b>14 days:</b> field test + tuning + expansion recommendation</li>
+        </ul>
+        <div class="divider"></div>
+        <div class="footer">
+          <div class="pill">Territory IQ • Roofing</div>
+          <div class="pill">Exclusive pockets • Rep-safe growth</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" style="margin-top:22px">
+      <div class="pill">InstinctRise Strategy Group</div>
+      <div class="pill">Sean Kaplan • skaplan@instinctrise.com</div>
+    </div>
+  </div>
 </body>
 </html>
