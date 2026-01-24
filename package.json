@@ -1,10 +1,14 @@
 {
-  "name": "instinctrise-enterprise",
-  "version": "1.0.0",
+  "name": "instinctrise",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
+  }
+}
   },
   "dependencies": {
     "next": "14.0.0",
